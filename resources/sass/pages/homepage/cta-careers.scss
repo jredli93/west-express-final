@@ -1,0 +1,49 @@
+.cta-careers-wrap {
+    width: 100%;
+    height: 55vh;
+        background: linear-gradient(55deg, rgba(255, 255, 255, 0.94) 46%, rgb(12 95 99 / 0%) 100%),
+        url('/assets/images/career-cta1.jpg');
+        background-position: 225% 222%;
+        background-size: cover;
+
+    .cta-careers {
+        @include center-content();
+        margin: 0 auto;
+        flex: 0 1 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%;
+
+        .btn-transparent {
+            border: 0.15rem solid $blue;
+            color: $blue;
+
+            &:hover {
+                background: $blue;
+
+                span {
+                    color: $dark-black;
+                }
+            }
+
+            .btn-text {
+                color: $blue;
+            }
+        }
+
+        .cta-careers-text {
+            margin-bottom: 2rem;
+            color: $dark-black;
+        }
+
+        .cta-careers-title {
+            color: $text-white;
+            font-family: $styled-text;
+            text-align: center;
+            color: $blue;
+            font-size: 5.5rem;
+        }
+    }
+}

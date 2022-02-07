@@ -1,0 +1,169 @@
+.testimonials-wrap {
+    background-position: 0% 82%;
+    margin-top: 4rem;
+    position: relative;
+    overflow: hidden;
+
+    .bg-effect {
+        background: url('/assets/images/pplsaid1.jpg');
+        // background: url('/assets/images/career-cta2.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        -moz-filter: blur(13px);
+        -o-filter: blur(13px);
+        -ms-filter: blur(13px);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .testimonials-content {
+        max-width: 100%;
+        margin: 0 auto;
+        filter: opacity(1);
+
+        .testimonials-overtitle {
+            color: $text-white;
+            font-size: 1.2rem;
+            display: block;
+            text-align: center;
+        }
+
+        .testimonials-title {
+            color: $blue;
+            font-family: $styled-text;
+            text-align: center;
+            font-size: 5rem;
+            padding-top: 5rem;
+        }
+    }
+
+    .testimonials-background {
+        filter: opacity(1);
+        height: 400px;
+        max-width: 70vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+        background-size: cover;
+
+        @include tablet() {
+            flex-direction: column;
+            height: auto;
+        }
+
+        .testimonials-info {
+            flex: 0 1 calc(40% - 1rem);
+            height: 100%;
+            padding: 3.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: start;
+            background: linear-gradient(55deg, rgb(255 255 255 / 16%) 32%, rgb(208 87 15) 100%),
+            url('/assets/images/people-said2.jpg');
+            background-position: 0% 112%;
+            background-attachment: fixed;
+            background-size: cover;
+
+            @include tablet() {
+                // background-size: none;
+            }
+
+            .testimonials-info-text {
+                margin: 1.5rem 0;
+                text-shadow: 0 0 8px black;
+            }
+
+            .testimonials-info-title {
+                text-shadow: 0 0 8px black;
+            }
+        }
+
+        .testimonials-list {
+            max-width: 70vw;
+            flex: 0 1 calc(60% - 1rem);
+            background: $darkBlue;
+            height: 100%;
+            padding: 0 3.5rem 3.5rem 3.5rem;
+            
+            @include tablet() {
+                width: 100%;
+                max-width: none;
+            }
+
+            .main-carousel {
+                height: 350px;
+
+                .flicity-viewport {
+                    height: 100%;
+                }
+
+                .carousel-cell {
+                    width: 100%;
+                    height: 200px;
+                    margin-right: 10px;
+
+                    @include mobile {
+                        .carousel-cell {
+                            width: 100%;
+                        }
+                    }
+
+                    .testimonials-image {
+                        width: 100%;
+                        height: 300px;
+                        background-size: cover;
+                        display: flex;
+                        background-position: center;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+
+                        .testimonials-info-text {
+                            margin-top: 1.5rem;
+                        }
+                    }
+
+                    .ai1 {
+                        // background: url('http://templatekit.krakenbox.net/blankink/wp-content/uploads/sites/4/elementor/thumbs/s13-owjxjw2uh7q52vcn3cvlt225b29bad76ox6rw2bzw0.jpg') top/cover;
+                    }
+
+                    .testimonials-info {
+                        display: block;
+                        color: $dark-black;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                    }
+
+                    .testimonials-name {
+                        text-align: center;
+                        font-family: $styled-text;
+                        text-shadow: 0px 0px 5px black;
+                    }
+                }
+
+                /* position dots up a bit */
+                .flickity-page-dots {
+                    bottom: 0px;
+                }
+
+                /* dots are lines */
+                .flickity-page-dots .dot {
+                    height: 4px;
+                    width: 40px;
+                    margin: 0;
+                    background: #c25638;
+                    border-radius: 0;
+                }
+            }
+
+
+        }
+    }
+}

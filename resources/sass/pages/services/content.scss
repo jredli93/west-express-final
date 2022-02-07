@@ -1,0 +1,204 @@
+.services-content-wrap {
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .services-content {
+        max-width: 70vw;
+        margin: 0 auto;
+
+        .services-text {
+            margin-top: 8rem;
+            text-align: center;
+            color: $darkBlue;
+            margin: 0 auto;
+            max-width: 50vw;
+            padding: 2rem 0;
+            font-size: 1.15rem;
+        }
+
+        .services-wrap-container {
+            margin-top: 3rem;
+
+            .services-overtitle {
+                color: $dark-black;
+                font-size: 1.2rem;
+                display: block;
+                text-align: center;
+            }
+
+            .services-title {
+                color: $blue;
+                font-family: $styled-text;
+                line-height: 3.5rem;
+                text-align: center;
+                font-size: 5rem;
+                text-shadow: 0px 0px 10px $text-white;
+            }
+
+            .services-container {
+                margin-top: 2rem;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .services-single {
+                    flex: 0 1 calc(33% - 1rem);
+                    background: $blue;
+                    padding: 2rem;
+                    position: relative;
+                    border-radius: 2px;
+                    text-align: center;
+                    margin-top: 1rem;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    animation: gradient 4s ease infinite;
+
+                    @include tablet {
+                        flex: 0 1 calc(50% - 1rem);
+                    }
+
+                    @include mobile {
+                        flex: 0 1 100%;
+                    }
+
+                    .services-single-icon {
+                        width: 100px;
+                        filter: drop-shadow(0px 0px 3px $dark-black) saturate(0.9);
+                    }
+
+                    .services-single-title {
+                        margin: 0.8rem 0;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 10px;
+                        right: 10px;
+                        top: 10px;
+                        bottom: 10px;
+                        border: 2px solid #ffffff5d;
+                    }
+
+
+                }
+
+                .services-single:nth-child(1) {
+                    background: linear-gradient(30deg, #33a2a1, #238eb5, #129475);
+                    background-size: 400% 400%;
+                    animation: gradient 2.5s ease infinite;
+                }
+
+                .services-single:nth-child(2) {
+                    background: linear-gradient(30deg, #33a2a1, #238eb5, #129475);
+                    background-size: 400% 400%;
+                    animation: gradient 5s ease infinite;
+                }
+
+                .services-single:nth-child(3) {
+                    background: linear-gradient(30deg, #33a2a1, #238eb5, #129475);
+                    background-size: 400% 400%;
+                    animation: gradient 3s ease infinite;
+                }
+
+                .services-single:nth-child(4) {
+                    background: linear-gradient(30deg, #33a2a1, #238eb5, #129475);
+                    background-size: 400% 400%;
+                    animation: gradient 7s ease infinite;
+                }
+
+                .services-single:nth-child(5) {
+                    background: linear-gradient(30deg, #33a2a1, #238eb5, #129475);
+                    background-size: 400% 400%;
+                    animation: gradient 3s ease infinite;
+                }
+
+                .services-single:nth-child(6) {
+                    background: linear-gradient(30deg, #33a2a1, #238eb5, #129475);
+                    background-size: 400% 400%;
+                    animation: gradient 4s ease infinite;
+                }
+            }
+        }
+
+        .services-subheading {
+            color: $dark-black;
+            font-size: 1.2rem;
+            display: block;
+            text-align: center;
+        }
+
+        .services-heading {
+            color: $blue;
+            font-family: $styled-text;
+            line-height: 3.5rem;
+            text-align: center;
+            font-size: 5rem;
+            margin-top: 7rem;
+            text-shadow: 0px 0px 10px $text-white;
+        }
+    }
+    .cta-careers-wrap {
+        width: 100%;
+        height: 55vh;
+        background: linear-gradient(55deg, rgba(255, 255, 255, 0.94) 46%, rgba(12, 95, 99, 0.58) 100%),
+            url('/assets/images/services-about.jpg');
+        background-position: 85% 72%;
+        background-size: cover;
+        margin-top: 7rem;
+
+        .cta-careers {
+            @include center-content();
+            margin: 0 auto;
+            flex: 0 1 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            height: 100%;
+
+            .btn-transparent {
+                border: 0.15rem solid $blue;
+                color: $blue;
+
+                &:hover {
+                    background: $blue;
+
+                    span {
+                        color: $dark-black;
+                    }
+                }
+
+                .btn-text {
+                    color: $blue;
+                }
+            }
+
+            .cta-careers-text {
+                margin-bottom: 2rem;
+                color: $dark-black;
+            }
+
+            .cta-careers-title {
+                color: $text-white;
+                font-family: $styled-text;
+                text-align: center;
+                color: $blue;
+                font-size: 5.5rem;
+            }
+        }
+    }
+}

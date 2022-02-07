@@ -1,0 +1,41 @@
+.footer-wrap {
+    background: $darkBlue;
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 4rem;
+        max-width: 40vw;
+        margin: 0 auto;
+        padding: 2.5rem 0;
+        flex-direction: column;
+        gap: 2rem;
+        border-bottom: 4px solid $blue;
+        flex-direction: column;
+
+        .footer-list {
+            list-style-type: none;
+            display: flex;
+            gap: 1rem;
+
+            .footer-item, a {
+                font-family: $styled-text;
+                letter-spacing: 0.1rem;
+                text-decoration: none;
+            }
+        }
+
+        @include mobile {
+            max-width: 45vh;
+            flex-direction: column;
+        }
+
+        .footer-logo {
+            filter: drop-shadow(0px 0px 1px white);
+            text-align: center;
+            width: 150px;
+            display: block;
+        }
+    }
+}
